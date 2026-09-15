@@ -1,42 +1,42 @@
-# Cronomix (Updated Edition)
+# Cronomix (Updated Edition for Modern GNOME Shell)
 
-**All-in-one timer, stopwatch, pomodoro, alarm, todo, time tracker, and flashcards GNOME Shell extension.**
+**The bad-ass all-in-one timer, stopwatch, pomodoro, alarm, todo, time tracker, and flashcards GNOME Shell extension.**
 
 > [!NOTE]
-> **Credits & Attribution**: This extension is an updated fork of **Cronomix**, originally created by **[zagortenay333](https://github.com/zagortenay333)** ([Original Repository](https://github.com/zagortenay333/cronomix)).
+> **Respect to the Original Creator**: Full credit and massive respect to **[zagortenay333](https://github.com/zagortenay333)** ([Original Repository](https://github.com/zagortenay333/cronomix)) for building this fucking awesome extension in the first place. You are a legendary dev. This repo is an updated fork keeping this shit running on modern GNOME Shell releases.
 
 ![preview](./data/images/screenshots/todo.png)
 
 ---
 
-## Overview & Features
+## What the Fuck is This? (Overview & Features)
 
-- **GNOME Shell 45–50+ Compatibility**: Full support for modern GNOME Shell releases.
-- **Theme & MacTahoe Compatibility**: Automatic system dark/light theme detection with full support for custom GTK/Shell themes (such as **MacTahoe GTK Theme**).
-- **Flexible Top Bar Layout**: Choose between individual panel buttons for each applet or a **Single Combined Menu Button** with a tabbed interface.
+- **GNOME Shell 45–50+ Compatible**: Fixed the broken shit so it actually works on modern GNOME Shell versions (45, 46, 47, 48, 49, 50+) without crashing like a moron.
+- **MacTahoe & Custom Theme Compatibility**: Fixed light/dark mode auto-detection so light themes (like **MacTahoe GTK Theme**) don't show unreadable white text on light backgrounds like an asshole.
+- **Top Bar Layout Modes**:
+  - **`Separate buttons`**: Show every single applet icon in the top panel if you want your bar filled with shit.
+  - **`Single combined menu button`**: Collage all your applets into one single master button with a slick tabbed dropdown menu so your top panel doesn't look like a cluttered dick.
 
 ---
 
-## Accessing Extension Settings
+## How to Access Settings (Read This Shit)
 
 > [!TIP]
-> **Quick Access to Settings**:
-> - **Right-click** any of the Cronomix applet icons in the top bar and select **Settings**.
-> - Alternatively, click the wrench icon (**⚙**) inside any applet menu or combined tab header.
+> **Don't Be a Moron — Accessing Settings**:
+> - **Right-click** any of the Cronomix applet logos/icons in your top bar and click **Settings**.
+> - Or click the wrench icon (**⚙**) inside any applet dropdown menu or combined tab header.
 
-In the settings menu, you can:
-- Enable or disable individual applets (`Todo`, `Alarm`, `Timer`, `Pomodoro`, `Stopwatch`, `Flashcards`).
-- Change the **Top bar button layout**:
-  - **`Separate buttons`**: Individual top bar buttons for each applet.
-  - **`Single combined menu button`**: Collages all enabled applets into a single top bar button with a tabbed dropdown menu.
-- Custom theme CSS selection & lazy list page size options.
+Inside the settings portal, you can:
+- Enable or disable whatever applets you give a fuck about (`Todo`, `Alarm`, `Timer`, `Pomodoro`, `Stopwatch`, `Flashcards`).
+- Change the **Top bar button layout** (`Separate buttons` vs `Single combined menu button`).
+- Tweak custom theme CSS files and lazy list page size options so your desktop doesn't run like shit.
 
 ---
 
-## Step-by-Step Build & Installation Guide
+## Step-by-Step Installation & Build Guide
 
 ### Step 1: Install Build Dependencies
-Ensure Node.js, npm, and gettext are installed on your system:
+Get your system dependencies installed so the build doesn't throw a bitch fit:
 
 **Fedora / RHEL:**
 ```bash
@@ -50,7 +50,7 @@ sudo apt update && sudo apt install nodejs npm gettext
 
 ---
 
-### Step 2: Clone the Repository
+### Step 2: Clone this Shit
 ```bash
 git clone https://github.com/fuckyou-c0rp/cronomix-updated-2026.git
 cd cronomix-updated-2026
@@ -58,31 +58,33 @@ cd cronomix-updated-2026
 
 ---
 
-### Step 3: Build the Extension
-Run the build script to compile TypeScript files and install assets to your local GNOME extensions folder:
+### Step 3: Build the Code
+Run the build script to compile the TypeScript sources into JavaScript and install the build to your local extensions directory:
 ```bash
 ./scripts/build
 ```
-*(Files are output to `~/.local/share/gnome-shell/extensions/cronomix@zagortenay333`)*
+*(Outputs the compiled extension files directly to `~/.local/share/gnome-shell/extensions/cronomix@zagortenay333`)*
 
 ---
 
 ### Step 4: Reload GNOME Shell
-- **Wayland (Default)**: Log out of your desktop session and log back in.
-- **X11**: Press <kbd>Alt</kbd> + <kbd>F2</kbd>, type `r`, and press <kbd>Enter</kbd>.
+GNOME Shell needs to index the new extension directory on startup:
+- **Wayland**: Log out of your desktop session and log back in.
+- **X11**: Press <kbd>Alt</kbd> + <kbd>F2</kbd>, type `r`, and hit <kbd>Enter</kbd>.
 
 ---
 
 ### Step 5: Enable the Extension
+Enable the extension via CLI:
 ```bash
 gnome-extensions enable cronomix@zagortenay333
 ```
-*(Or enable **Cronomix** using the **Extension Manager** app)*
+*(Or flip the toggle in the **Extension Manager** app)*
 
 ---
 
 ## Credits & License
 
-- **Original Author**: [zagortenay333](https://github.com/zagortenay333)
+- **Original Author**: [zagortenay333](https://github.com/zagortenay333) (Huge respect to the original mastermind!)
 - **Original Project**: [zagortenay333/cronomix](https://github.com/zagortenay333/cronomix)
 - **License**: MIT License
