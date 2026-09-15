@@ -2,6 +2,11 @@
 
 **The bad-ass all-in-one timer, stopwatch, pomodoro, alarm, todo, time tracker, and flashcards GNOME Shell extension.**
 
+[![GNOME Shell 45-50+](https://img.shields.io/badge/GNOME%20Shell-45--50%2B-blue?style=for-the-badge&logo=gnome)](https://github.com/fuckyou-c0rp/cronomix-updated-2026)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://github.com/fuckyou-c0rp/cronomix-updated-2026)
+[![MacTahoe GTK](https://img.shields.io/badge/MacTahoe%20GTK-Compatible-orange?style=for-the-badge)](https://github.com/fuckyou-c0rp/cronomix-updated-2026)
+[![License MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](https://github.com/fuckyou-c0rp/cronomix-updated-2026)
+
 > [!NOTE]
 > **Respect to the Original Creator**: Full credit and massive respect to **[zagortenay333](https://github.com/zagortenay333)** ([Original Repository](https://github.com/zagortenay333/cronomix)) for building this fucking awesome extension in the first place. You are a legendary dev. This repo is an updated fork keeping this shit running on modern GNOME Shell releases.
 
