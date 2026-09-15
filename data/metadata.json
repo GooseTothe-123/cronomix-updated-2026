@@ -3,6 +3,6 @@
     "uuid":           "cronomix@zagortenay333",
     "url":            "https://github.com/zagortenay333/cronomix",
     "description":    "All-in-one timer, stopwatch, pomodoro, alarm, todo, and flashcards extension.",
-    "shell-version":  ["49", "50"],
+    "shell-version":  ["45", "46", "47", "48", "49", "50"],
     "gettext-domain": "cronomix"
 }

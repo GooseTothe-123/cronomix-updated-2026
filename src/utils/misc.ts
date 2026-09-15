@@ -35,7 +35,8 @@ export function get_transformed_allocation (actor: Clutter.Actor): Rectangle {
 }
 
 export function get_monitor_work_area (for_actor: Clutter.Actor) {
-    const monitor = Main.layoutManager.findIndexForActor(for_actor);
+    let monitor = Main.layoutManager.findIndexForActor(for_actor);
+    if (monitor < 0) monitor = Main.layoutManager.primaryIndex;
     return Main.layoutManager.getWorkAreaForMonitor(monitor);
 }
 

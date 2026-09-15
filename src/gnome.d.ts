@@ -49,11 +49,18 @@ declare module 'gi://St' {
             static get_for_stage: (stage: Clutter.Stage) => ThemeContext;
         }
 
+        class Settings extends GObject.Object {
+            color_scheme: number;
+            static get_default (): Settings;
+        }
+
         class ThemeNode extends GObject.Object {
             get_max_height (): number;
             get_vertical_padding (): number;
             get_horizontal_padding (): number;
             lookup_color (property: string, inherit: boolean): [boolean, Clutter.Color];
+            get_background_color (): Clutter.Color;
+            get_color (property_name: string): Clutter.Color;
             adjust_preferred_height (min_width: number, natural_width: number): [number, number];
             adjust_preferred_width (min_height: number, natural_height: number): [number, number];
             adjust_for_width (w: number): number;
@@ -755,6 +762,8 @@ declare module 'resource:///org/gnome/shell/ui/layout.js' {
     }
 
     class LayoutManager extends GObject.Object {
+        primaryIndex: number;
+        primaryMonitor: Monitor | null;
         uiGroup: St.Widget;
         dummyCursor: St.Widget;
         panelBox: St.BoxLayout;
