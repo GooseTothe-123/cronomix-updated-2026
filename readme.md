@@ -1,6 +1,6 @@
 # Cronomix (Updated Edition for Modern GNOME Shell)
 
-**The bad-ass all-in-one timer, stopwatch, pomodoro, alarm, todo, time tracker, and flashcards GNOME Shell extension.**
+**The ultimate all-in-one timer, stopwatch, pomodoro, alarm, todo, time tracker, and flashcards GNOME Shell extension.**
 
 [![GNOME Shell 45-50+](https://img.shields.io/badge/GNOME%20Shell-45--50%2B-blue?style=for-the-badge&logo=gnome)](https://github.com/fuckyou-c0rp/cronomix-updated-2026)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://github.com/fuckyou-c0rp/cronomix-updated-2026)
