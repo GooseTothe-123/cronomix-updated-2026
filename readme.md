@@ -38,6 +38,16 @@ Inside the settings portal, you can:
 ### Step 1: Install Build Dependencies
 Get your system dependencies installed so the build doesn't throw a bitch fit:
 
+**openSUSE (Tumbleweed / Leap):**
+```bash
+sudo zypper install nodejs npm gettext-tools
+```
+
+**Arch Linux / Manjaro:**
+```bash
+sudo pacman -S nodejs npm gettext
+```
+
 **Fedora / RHEL:**
 ```bash
 sudo dnf install nodejs gettext
